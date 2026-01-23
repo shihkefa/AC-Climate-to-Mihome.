@@ -126,7 +126,7 @@
     .product-image {
       text-align: center;
       margin: 40px 0;
-      padding: 40px;
+      padding: 30px;
       background: #fafafa;
       border: 1px solid #e5e5e5;
       border-radius: 4px;
@@ -135,10 +135,14 @@
       align-items: flex-end;
       gap: 20px;
       position: relative;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .product-image > img {
-      max-width: 40%;
+      max-width: min(50%, 500px);
+      width: 100%;
       height: auto;
       border-radius: 4px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -153,8 +157,8 @@
 
     .mijia-badge {
       position: absolute;
-      bottom: 40px;
-      right: 40px;
+      bottom: 30px;
+      right: 30px;
       display: flex;
       align-items: flex-end;
     }
@@ -358,6 +362,21 @@
       text-align: center;
     }
 
+    @media (max-width: 900px) {
+      .product-image {
+        justify-content: flex-start;
+        max-width: 100%;
+      }
+
+      .product-image > img {
+        max-width: min(60%, 400px);
+      }
+
+      .mijia-badge img {
+        max-width: 65px;
+      }
+    }
+
     @media (max-width: 768px) {
       body {
         padding: 15px 10px;
@@ -387,7 +406,8 @@
       }
 
       .product-image {
-        padding: 25px 15px;
+        padding: 20px 15px;
+        max-width: 100%;
       }
 
       .product-image > img {
