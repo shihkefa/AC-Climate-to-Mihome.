@@ -130,11 +130,15 @@
       background: #fafafa;
       border: 1px solid #e5e5e5;
       border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 20px;
       position: relative;
     }
 
-    .product-image img {
-      max-width: 55%;
+    .product-image > img {
+      max-width: 40%;
       height: auto;
       border-radius: 4px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -149,12 +153,14 @@
 
     .mijia-badge {
       position: absolute;
-      bottom: 20px;
-      right: 20px;
+      bottom: 40px;
+      right: 40px;
+      display: flex;
+      align-items: flex-end;
     }
 
     .mijia-badge img {
-      max-width: 140px;
+      max-width: 70px;
       height: auto;
       box-shadow: none;
     }
@@ -384,17 +390,17 @@
         padding: 25px 15px;
       }
 
-      .product-image img {
-        max-width: 75%;
+      .product-image > img {
+        max-width: 70%;
       }
 
       .mijia-badge {
-        bottom: 10px;
-        right: 10px;
+        position: static;
+        margin-top: 20px;
       }
 
       .mijia-badge img {
-        max-width: 100px;
+        max-width: 60px;
       }
 
       .price {
@@ -433,7 +439,6 @@
         <div class="mijia-badge">
           <img src="images/mijia.webp" alt="已接入米家 works with mijia">
         </div>
-
       </div>
 
       <div class="intro-text">
