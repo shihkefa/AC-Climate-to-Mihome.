@@ -39,14 +39,14 @@
     .header {
       background: #1a1a1a;
       color: white;
-      padding: 35px 40px;
+      padding: 18px 40px;
       border-bottom: 4px solid #0066cc;
       text-align: center;
     }
 
     h1 {
       font-size: 1.9rem;
-      margin-bottom: 12px;
+      margin-bottom: 6px;
       font-weight: 600;
       letter-spacing: 0.5px;
     }
@@ -56,6 +56,8 @@
       opacity: 0.9;
       font-weight: 400;
       color: #e0e0e0;
+      line-height: 1.3;
+      margin: 3px 0;
     }
 
     .subtitle-right {
@@ -64,6 +66,8 @@
       font-weight: 400;
       color: #e0e0e0;
       text-align: right;
+      line-height: 1.3;
+      margin: 3px 0;
     }
 
     .content {
@@ -211,25 +215,29 @@
 
     .price-section {
       background: #ffffff;
-      padding: 35px 40px;
+      padding: 25px 30px;
       border-radius: 4px;
-      margin: 40px 0;
+      margin: 30px 0;
       text-align: center;
       border: 2px solid #0066cc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
     }
 
     .price {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 700;
-      color: #d32f2f;
-      margin-bottom: 25px;
+      color: #1a1a1a;
+      margin: 0;
       letter-spacing: 1px;
     }
 
     .price-label {
-      font-size: 1rem;
+      font-size: 0.9rem;
       color: #666;
-      margin-bottom: 8px;
+      margin: 0;
       font-weight: 400;
     }
 
@@ -275,14 +283,14 @@
 
     .feature-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin: 25px 0;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 20px 0;
     }
 
     .feature-card {
       background: #fafafa;
-      padding: 25px 20px;
+      padding: 20px 15px;
       border-radius: 4px;
       border: 1px solid #e5e5e5;
       text-align: center;
@@ -296,20 +304,20 @@
     }
 
     .feature-icon {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
+      font-size: 2rem;
+      margin-bottom: 10px;
       filter: grayscale(20%);
     }
 
     .feature-title {
       font-weight: 600;
       color: #1a1a1a;
-      margin-bottom: 8px;
-      font-size: 1.05rem;
+      margin-bottom: 6px;
+      font-size: 1rem;
     }
 
     .feature-desc {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #666;
     }
 
@@ -383,7 +391,7 @@
       }
 
       .header {
-        padding: 25px 20px;
+        padding: 13px 20px;
       }
 
       h1 {
@@ -428,7 +436,8 @@
       }
 
       .feature-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
       }
 
       .spec-table th {
@@ -462,14 +471,16 @@
       </div>
 
       <div class="intro-text">
-        本控制器支援 <strong>大金 / 日立 / 三菱電機</strong> 空調系統，<strong>國際牌（Panasonic）</strong> 正在最終測試階段。可直接整合至 <strong>米家 App（大陸區）</strong> 生態系統，無需額外感測器即可精準回饋運行狀態，實現模式、溫度、風速的即時監控與控制。
+        本控制器支援 <strong>大金 / 日立 / 三菱電機</strong> 空調系統，<strong>國際牌（Panasonic）</strong> 正在最終測試階段。可直接整合至 <strong>米家 App（陸版）</strong> 生態系統，無需額外感測器即可精準回饋運行狀態，實現模式、溫度、風速的即時監控與控制。
       </div>
 
       <div class="price-section">
-        <p class="price-label">建議售價</p>
-        <p class="price">NT$ 1,500</p>
+        <div>
+          <p class="price-label">建議售價</p>
+          <p class="price">NT$ 1,500</p>
+        </div>
         <a class="line-btn" href="https://line.me/ti/p/~kefashih" target="_blank">
-          聯繫諮詢 / 請按此加我Line / ID : kefashih
+          💬 Line 諮詢購買（ID: kefashih）
         </a>
       </div>
 
@@ -499,10 +510,10 @@
       </div>
 
       <div class="highlight">
-        <span class="highlight-title">米家 App 即時監控功能</span>
+        <span class="highlight-title">米家 App 內支援功能</span>
         <table class="spec-table">
           <tr>
-            <th>監控項目</th>
+            <th>功能項目</th>
             <td>功能說明</td>
           </tr>
           <tr>
@@ -521,8 +532,11 @@
             <th>風速調節</th>
             <td>自動、低速、中速、高速</td>
           </tr>
+          <tr>
+            <th>環境溫度</th>
+            <td>支援顯示冷氣機中溫度傳感器當前環境溫度</td>
+          </tr>
         </table>
-        <p>※ App 顯示數據與實際設備狀態完全同步</p>
       </div>
 
       <div class="divider"></div>
@@ -535,7 +549,8 @@
           <ul>
             <li>Wi-Fi 無線版本</li>
             <li>藍牙 Mesh 版本</li>
-            <li>相容介面：S21 / S403</li>
+            <li>主機連接接口：S21 / S403</li>
+            <li>如何安裝拆機器安裝：請參考惟家控制器的<a href="https://www.youtube.com/watch?v=zq287xmkLNM" target="_blank" style="color: #0066cc; text-decoration: none;">大金安裝方式</a></li>
           </ul>
         </div>
       </div>
@@ -545,8 +560,8 @@
         <div class="brand-content">
           <ul>
             <li>Wi-Fi 無線版本</li>
-            <li>藍牙 Mesh 版本</li>
-            <li>相容介面：CN10</li>
+            <li>藍牙 Mesh 版本（開發中）</li>
+            <li>主機連接接口：CN10</li>
           </ul>
         </div>
       </div>
@@ -557,7 +572,7 @@
           <ul>
             <li>Wi-Fi 無線版本（最終測試階段）</li>
             <li>藍牙 Mesh 版本（開發中）</li>
-            <li>相容介面：SM-4 / CN-SAA</li>
+            <li>主機連接接口：SM-4 / CN-SAA</li>
           </ul>
         </div>
       </div>
@@ -568,7 +583,8 @@
           <ul>
             <li>Wi-Fi 無線版本</li>
             <li>藍牙 Mesh 版本</li>
-            <li>相容介面：CN-105</li>
+            <li>主機連接接口：CN-105</li>
+            <li>如何安裝拆機器安裝：請參考惟家控制器的<a href="https://www.youtube.com/watch?v=lYYo8n3iFCc" target="_blank" style="color: #0066cc; text-decoration: none;">三菱電機安裝方式</a></li>
           </ul>
         </div>
       </div>
@@ -593,13 +609,14 @@
       </table>
 
       <div class="note">
-        <strong>技術支援：</strong><br>
-        如有產品規格、系統相容性或技術整合等相關問題，歡迎透過 Line 聯繫進行專業諮詢。我們將提供完整的技術支援與導入協助。
+        <strong>產品說明：</strong><br>
+        1. 請在空調斷電情況下安裝，安裝好之後空調送電，綠燈長亮就表示控制器跟空調機器正常溝通，紅燈閃爍則是等待接入米家，此時就可以開啟米家APP去新增設備。<br>
+        2. 此售價不含安裝費用，如有產品規格、系統相容性或技術整合等相關問題，歡迎透過 Line 聯繫進行專業諮詢。我們將提供完整的技術支援與導入協助。
       </div>
 
       <div class="center" style="margin-top: 45px;">
         <a class="line-btn" href="https://line.me/ti/p/~kefashih" target="_blank">
-          立即聯繫專業諮詢
+          💬 Line 諮詢購買（ID: kefashih）
         </a>
       </div>
 
@@ -608,4 +625,3 @@
   </div>
 </body>
 </html>
-
