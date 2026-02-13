@@ -129,24 +129,19 @@
 
     .product-image {
       text-align: center;
-      margin: 40px 0;
+      margin: 40px auto;
       padding: 30px;
       background: #fafafa;
       border: 1px solid #e5e5e5;
       border-radius: 4px;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
-      gap: 20px;
-      position: relative;
+      align-items: center;
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .product-image > img {
-      max-width: min(50%, 500px);
-      width: 100%;
+      max-width: 50%;
       height: auto;
       border-radius: 4px;
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -383,21 +378,6 @@
       text-align: center;
     }
 
-    @media (max-width: 900px) {
-      .product-image {
-        justify-content: flex-start;
-        max-width: 100%;
-      }
-
-      .product-image > img {
-        max-width: min(60%, 400px);
-      }
-
-      .mijia-badge img {
-        max-width: 65px;
-      }
-    }
-
     @media (max-width: 768px) {
       body {
         padding: 15px 10px;
@@ -433,15 +413,6 @@
 
       .product-image > img {
         max-width: 70%;
-      }
-
-      .mijia-badge {
-        position: static;
-        margin-top: 20px;
-      }
-
-      .mijia-badge img {
-        max-width: 60px;
       }
 
       .price {
@@ -494,9 +465,6 @@
 
       <div class="product-image">
         <img src="images/ac-controller02.png" alt="台灣空調米家智慧控制器 產品照片">
-        <div class="mijia-badge">
-          <img src="images/mijia.webp" alt="已接入米家 works with mijia">
-        </div>
       </div>
 
       <div class="intro-text">
@@ -661,5 +629,3 @@
   </div>
 </body>
 </html>
-
-
